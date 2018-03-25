@@ -1,11 +1,11 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {CarComponent} from './car/car.component';
+import {PerroLocalComponent} from './perrolocal/perrolocal.component';
 import {PersonComponent} from './person/person.component';
 
 const appRoutes: Routes = [
     {path: 'persons', component: PersonComponent},
-    {path: 'cars', component: CarComponent}
+    {path: 'perroslocales', component: PerroLocalComponent}
 ];
 
 export const appRoutingProviders: any[] = [];

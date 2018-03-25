@@ -1,4 +1,4 @@
-export class Car {
+export class PerroLocal {
     constructor(
         public raza:string
     ){}
