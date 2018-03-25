@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PerroLocalComponent } from './perrolocal/perrolocal.component';
 import { PerroComponent } from './perro/perro.component';
-import {routing, appRoutingProviders} from './app.routing';
+import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
