@@ -39,17 +39,12 @@ export class PerroComponent implements OnInit {
   }
 
   onSelect(perro: Perro): void {
-    console.log(perro.raza);
-    this.img_selected = perro.raza;
-    console.log(perro.raza);
     this._dogImage.getUrlImage(perro.raza).subscribe(
       result => {
-        console.log('aca en OnSelect');
         this.img_selected = result.message;
-        console.log(result.message);
       },
       error => {
-        console.log('error');
+        console.log('error en onSelect');
       }
     );
   }

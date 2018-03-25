@@ -5,7 +5,7 @@ input {
 form {
     width: 200px;
 }
- 
+
 .listado {
     margin-left: 130px;
 }
@@ -13,4 +13,8 @@ form {
 input[type="text"], span{
     display: block;
     width: 100%
+}
+
+button {
+    background-color: #ccf3f5;
 }

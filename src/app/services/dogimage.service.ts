@@ -17,7 +17,8 @@ export class DogImageService {
     }
 
     getUrlImage( raza ) {
-        let url_complete = this.url +raza+'/images/random';
+        let url_complete = this.url + raza + '/images/random';
+        console.log  (url_complete);
         let responseAsObject = this._http.get(url_complete).map((res: Response) => res.json());
         return responseAsObject;
     }

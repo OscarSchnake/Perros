@@ -13,15 +13,11 @@ export class PerroLocalComponent implements OnInit {
   constructor() {
     this.perrolocal = new PerroLocal("");
     this. perroslocales = [ new PerroLocal("quiltro"),
-                            new PerroLocal("perro feo")];
+                            new PerroLocal("ladrador")];
    }
 
   ngOnInit() {
   }
 
-  onSubmit() {
-    this.perroslocales.push(this.perrolocal);
-    this.perrolocal = new PerroLocal("");
-  }
 
 }

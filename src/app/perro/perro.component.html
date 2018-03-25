@@ -1,10 +1,11 @@
-<div class="listado">
-  <img src={{img_selected}}  width=300/>
 
+<div>
+<img src={{img_selected}}  width=300/>
+</div>
+<div class="listado">
   <ul>
     <li *ngFor="let perro of perros" (click)="onSelect(perro)">
-      {{perro.raza}}
+      <button >{{perro.raza}}</button>
     </li>
-
   </ul>
 </div>
