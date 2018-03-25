@@ -1,0 +1,18 @@
+
+
+input {
+    background-color: #9cbcd1;
+}
+
+form {
+    width: 200px;
+}
+ 
+.listado {
+    margin-left: 130px;
+}
+
+input[type="text"], span{
+    display: block;
+    width: 100%
+}

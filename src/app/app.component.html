@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bienvenidos a {{ title }}!
+  </h1>
+</div>
+
+<<div>
+    <ng-container *ngFor="let contact of data.contacts">
+        <h2>{{contact.name}}</h2>
+    </ng-container>
+</div>
+
+<h2>Acciones disponibles: </h2>
+<ul>
+  <li>
+    <h2><a [routerLink]="['/cars']">Perros Locales</a></h2>
+  </li>
+  <li>
+      <h2><a [routerLink]="['/persons']">Perros Remotos</a></h2>
+    </li>
+
+</ul>
+<router-outlet></router-outlet>
