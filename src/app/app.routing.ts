@@ -1,10 +1,10 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {PerroLocalComponent} from './perrolocal/perrolocal.component';
-import {PersonComponent} from './person/person.component';
+import {PerroComponent} from './perro/perro.component';
 
 const appRoutes: Routes = [
-    {path: 'persons', component: PersonComponent},
+    {path: 'perros', component: PerroComponent},
     {path: 'perroslocales', component: PerroLocalComponent}
 ];
 

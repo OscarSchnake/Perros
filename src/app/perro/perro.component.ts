@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {Person} from './person';
+import {Perro} from './perro';
 import {RequestService} from '../services/request.service';
 
 @Component({
-  selector: 'app-person',
-  templateUrl: './person.component.html',
-  styleUrls: ['./person.component.css'],
+  selector: 'app-perro',
+  templateUrl: './perro.component.html',
+  styleUrls: ['./perro.component.css'],
   providers: [RequestService]
 })
-export class PersonComponent implements OnInit {
-  public person : Person;
-  public persons : Array <Person>;
+export class PerroComponent implements OnInit {
+  public perro : Perro;
+  public perros : Array <Perro>;
 
   constructor( private _request: RequestService) {
 //    this.person = new Person("");
@@ -19,26 +19,24 @@ export class PersonComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log('en ngOnInit');
-      this._request.getPersons().subscribe(
+      this._request.getPerros().subscribe(
           result => {
-            this.persons = [];
+            this.perros = [];
             let lista = result.message;
 
             for (var valor of lista) {
-                    this.persons.push({"raza":valor});
+                    this.perros.push({"raza":valor});
                     }
         },
         error => {
             var errorMessage = <any>error;
-            console.log(errorMessage);
         }
     );
   }
 
   onSubmit() {
-    this.persons.push(this.person);
-    this.person = new Person("");
+    this.perros.push(this.perro);
+    this.perro = new Perro("");
   }
 
 }
